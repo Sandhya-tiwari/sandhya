@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<style>
+		.red{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	     <p> Name :
+	       <input type="text" name="" id="fullname" placeholder="Name" onkeydown="setRequired()" >
+	       <span class="red" id="name-msg">*required</span>
+	</p>
+</div>
+      <div>
+	        <p>Email : 
+		     <input type="text" name="" id="Email" placeholder="Email" onkeydown="setRequired()">
+		     <span class="red" id="email">*required</span> </p>
+	</div>
+	    <div>
+	        <p> Password : 
+		      <input type="password" name="" id="Password" placeholder="Password" onkeydown="setRequired()">
+		      <span class="red" id="password">*required</span></p>
+	</div>
+	 <div>
+	     <p>Confirm : 
+	 	      <input type="password" name="" id="Confirm" placeholder="Confirm" onkeydown="setRequired()">
+	 	      <span class="red" id="confirm">*required</span></p>
+	 	</div>
+ 
+    <div>
+	      <button onclick="submit()">Submit</button>
+
+	      <p id="p-text"></p>
+	      <p id="p-result"></p>
+	   </div>
+       
+       <script>
+       	function submit(){
+             fullname = document.getElementById('fullname').value
+               if(fullname == "")
+               	document.getElementById('name-msg').innerText = 'Name cannot be empty'
+
+            Email = document.getElementById('Email').value
+             if(fullname == "")
+           	document.getElementById('email').innerText = '	email cannot be empty'
+
+           Password = document.getElementById('Password').value
+               if(fullname == "")
+               	document.getElementById('password').innerText = 'password cannot be empty'
+
+
+            Confirm = document.getElementById('Confirm').value
+               if(fullname == "")
+               	document.getElementById('confirm').innerText = 'confirm cannot be empty'
+
+               document.getElementById('p-text')
+               if(Password == Confirm){
+               	result = "same"
+               	document.getElementById('p-result').innerText = 'same' + 'form submited'
+               }
+               else
+               {
+               	result = "not same"
+               	document.getElementById('p-result').innerText = 'not same'
+               }
+       	}
+        function setRequired(){
+		         document.getElementById('name-msg').innerText = '*required'
+		         document.getElementById('email').innerText = '*required'
+                 document.getElementById('password').innerText = '*required'
+                 document.getElementById('confirm').innerText = '*required'
+       	          	}
+       	
+
+       </script>
+</body>
+</html>

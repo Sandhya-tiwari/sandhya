@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Contact page</title>
+	<style>
+          *{
+          	margin: 0;
+          	padding: 0;
+          }
+		
+		#main{
+			background:#73C6B6;
+		     height: 1200px;
+		     width: 100%;
+		    border: 1px solid black;
+	     }
+	     #div{
+	     	height: 1050px;
+	     	background: white;
+	     	border: 1px solid grey;
+	     	margin-top: 80px;
+	     	margin-left: 100px;
+	     	margin-bottom: 50px;
+	     	border-radius: 10px;
+	     	margin-right: 100px;
+	     }
+
+          #tact{
+       	   height: 950px;
+       	   width: 100%;
+       	   background: url(tajmahal.jpeg) no-repeat center center/cover;
+       	   margin-top: 50px;
+       	   margin-bottom: 20px;
+        }
+         h1{
+       	text-align: center;
+       	font-size: 50px;
+       	padding: 10px;
+          width: 420px;
+          margin-right: 150px;
+          margin-left: 50px;
+          color:brown;
+          font-style: italic;
+          height:80px ;
+          background-color:lightyellow;
+          border-radius:10px ;
+          /*margin: auto;*/
+
+        }
+        label{
+        	font-size: 20px;
+        	font-weight: bold;
+        }
+
+        #Contact{
+            /* border: 1px solid grey;*/
+             height: 1000px;
+             width: 500px;
+             margin-left: 300px;
+             padding: 5px;
+
+        }
+        .name{
+        	border: 1px solid white;
+        	width: 400px;
+        	height: 40px;
+          border-radius: 5px;
+        	margin-left: 10px;
+        	font-style: arial;
+        }
+        #form{
+        	/*border: 1px solid grey;*/
+        	width: 450px;
+        	height: 900px;
+        	margin-top: 30px;
+        	margin-left: 20px;
+        }
+        #Msg{
+        	height: 80px;
+        	width: 400px;
+        	border: none;
+        	border-radius: 5px;
+        	margin-left: 10px;
+        
+        }
+	</style>
+</head>
+<body>
+     <div id="main">
+          <div id="div">
+               <div id="tact">
+				<div id="Contact">
+				<h1>Contact Us</h1>
+				<form id="form">
+     <pre>
+     <label>Name</label>
+
+     <input class="name" type="text"  name="name"
+     placeholder =" Enter your name" required>
+
+
+     <label>Email</label>
+
+     <input class="name" type="text" name="email"
+	placeholder =" Enter your Email" required>
+
+
+     <label>Date of birth</label>
+
+     <input class="name" type="number"  name="name"
+     placeholder =" DD/MM/YY" required>
+
+
+     <label>Mobile Number</label>
+
+     <input class="name" type="number" name="name"
+     placeholder =" Enter your mobile no."required >
+
+     <label>Message</label>
+
+     <textarea id="Msg"  name="name"
+     placeholder =" Enter your message"> </textarea>
+     </pre>
+
+       <button class="w3-button w3-xlarge w3-green"style = "transform: translate(180px,-50px);">Submit</button>
+	
+
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
