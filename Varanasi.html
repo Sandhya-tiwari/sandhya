@@ -3,8 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Varanasi</title>
 	<style>
+		
 		*{
 			margin:0;
 		    padding:0;
@@ -53,33 +55,175 @@
 			/*border: 1px solid black;*/
 		}
 		#container{
-			height: 500px;
+			height: 700px;
 			width: 100%;
-			background:#FFB6C1;
+			background:#3A8891;
+			
 		
 		}
 		#tact{
-			height: 400px;
+			height: 450px;
 			width: 1000px;
 			background: white;
+			display: flex;
+	    margin: auto;
+	    transform: translate(10px,120px);
+	    border: 1px solid black;}
+	         /* height: 400px;
+            width: 70%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-image: url(assi.jpg);
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: slider 12s infinite linear;
+	    
+
+		}
+		 @keyframes slider{
+            0%{background-image: url(ganga.jpg);}
+            35%{background-image: url(picture.jpg);}
+            75%{background-image: url(MarineDrive.jpg);}
+        }*/
+		
+		.div{
+      	height: 350px;
+			  width: 500px;
+			  background: lightpink;
+			  clear: both;
+			  position: relative;
+			  -webkit-transition: left 2s;
+			  -moz-transition: left 2s;
+			  -o-transition: left 2s;
+			  transition: left 2s;
+		}
+		.div2{
+      	height: 450px;
+			  width: 500px;
+		}
+
+		
+		h4{
+			font-size: 40px;
+			font-weight: bold;
+			font-style: oblique;
+			margin-left: 200px;
+			height: 50px;
+			color: white;
+			transform: translate(10px,80px);
+		}
+		.img2{
+			height: 450px;
+			width: 500px;
+			float: left;
+			margin: 0px;
+			padding: 0px;
+			position: relative;
+		
+		}
+		.black{
 			margin-top: 30px;
-			margin-left: 150px;
-			
-			
+			font-size: 20px;
+			font-weight: bold;
+			margin-left: 50px;
 		}
-		#text{
-			height: 400px;
-			width: 500px;
-			background: olive;
+		h5{
+			margin-top: 10px;
+			font-size: 35px;
+			font-weight: bold;
+			margin-left: 50px;
+			color: orangered;
 			
+			}
+		h5:hover{
+			color: darkmagenta;
 		}
-		#img2{
-			height: 400px;
-			width: 500px;
-			background: crimson;
+		.para_text{
+       margin-left: 50px;
+       font-weight: bold;
+       font-size: 20px;
+       font-style: italic;
+       color: darkred;
+       margin-top: 20px;
 		}
-	
-	</style>
+		 ul{
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+        }
+        ul li{
+            list-style: none;
+            width: 80px;
+            height: 80px;
+            background: #262626;
+            margin: 0 10px;
+            border-radius: 50%;
+            transition: .5s;
+        }
+        ul li:hover{
+            background: #0070ff;
+        }
+        ul li span{
+           position: absolute;
+           width: 20px;
+           height: 20px;
+           border: 4px solid #fff;
+           transition: .5s;
+        }
+        ul li.next span{
+            top: 50%;
+            right: 20%;
+            transform: translateY(-50%) rotate(-45deg);
+            border-left: none;
+            border-top: none;
+        }
+        ul li.next:hover span{
+            right: 16%;
+        }
+        ul li.next span before{
+            content: '';
+            position: absolute;
+            width: 38px;
+            height: 4px;
+            background: #fff;
+            transform-origin: right;
+            transform: rotate(45deg) translate(0px,25px) scaleX(0);
+            transition: .5s;
+        }
+        ul li.next:hover span:before
+        {
+            transform:rotate(45deg) translate(0px,25px) scale(1) ;
+        }
+        ul li.prev span{
+            top: 50%;
+            left: 20%;
+            transform: translateY(-50%) rotate(-45deg);
+            border-right: none;
+            border-bottom: none;
+        }
+        ul li.prev:hover span{
+            left: 16%;
+        }
+        ul li.prev span before{
+            content: '';
+            position: absolute;
+            width: 38px;
+            height: 4px;
+            background: #fff;
+            transform-origin: left;
+            transform: rotate(45deg) translate(-2px,-1px) scale(0);
+            transition: .5s;
+        }
+        ul li.prev:hover span:before{
+            transform:rotate(45deg) translate(-2px,-1px) scaleX(1) ;
+        }
+  </style>
 </head>
 <body>
 	  <header>
@@ -111,13 +255,98 @@
 	  </p></pre>
 	  </div>
     <div id="container">
+    	<h4>Golden Triangle Tour with Varanasi</h4>
     	<div id="tact">
-    		<div id="text">
-         </div>
-        <div id="img2">
-         </div>
-    		
+    		<div class="div"> 
+    			<p class="black">River</p>
+    			<h5>Ganga River</h5>
+    			<p class="para_text">
+    				Named after the Hindu goddess Ganga, the Ganges<br> River is one of the most revered
+    				natural sites in India.Ghats in Varanasi are riverfront steps leading <br>to the banks of the River Ganges. The city has 88 ghats. Morning boat ride on the Ganges across the ghats is a popular visitors attraction.
+    			</p>
+    			<ul>
+          <li class="prev"><span></span></li>
+           <li class="next"><span></span></li>
+          </ul>
+    		</div>
+    		<div class="div2">
+    			<img src="ganga.jpg" class="img2">
+    		</div>
     	</div>
+
+
+    	<div id="tact">
+    		<div class="div"> 
+    			<p class="black">Ghat</p>
+    			<h5>Assi Ghat </h5>
+    			<p class="para_text">
+    				Assi Ghat's star attraction is a Shiva lingam (phallic representation of the Hindu deity) beneath a sacred fig tree.Tourists can also see another Ganga Aarti performance here in the evening, which is slightly smaller and more intimate than the one at Dasaswamedh Ghat.
+    			</p>
+    		</div>
+    		<div class="div2">
+    			<img src="assi.jpg" class="img2">
+    		</div>
+    		</div>
+
+    		<div id="tact">
+    		<div class="div"> 
+    			<p class="black">Ghat</p>
+    			<h5>Dasaswamedh Ghat </h5>
+    			<p class="para_text">
+    				Hindu priests put on the Ganga Aarti every night at the Dasaswamedh Ghat, starting at around 7pm. This tourist attraction is a swirling hodgepodge of flower sellers touting bright blossoms, boat operators hawking rides along the Ganges River, and sadhus (holy men) with face paint. 
+    			</p>
+    		</div>
+    		<div class="div2">
+    			<img src="dasaswamedh.jpg" class="img2">
+    		</div>
+    		</div>
+
+
+    		<div id="tact">
+    		<div class="div"> 
+    			<p class="black">Temple</p>
+    			<h5>Kashi Vishwanath Temple </h5>
+    			<p class="para_text">
+    					Hindu pilgrims and tourists alike travel for thousands of miles to reach the Shri Kashi Vishwanath Temple, a sacred attraction around four kilometers from the Varanasi Junction railway station near the Manikarnika Ghat. The impressive structure, dedicated to the Hindu deity Shiva, has earned the nickname "The Golden Temple" for its striking spire – plated in some 800 kilograms of pure gold. 
+    			</p>
+    		</div>
+    		<div class="div2">
+    			<img src="vishwanath.jpg" class="img2">
+    		</div>
+    		</div>
+
+
+    		<div id="tact">
+    		<div class="div"> 
+    			<p class="black">University</p>
+    			<h5>Banaras Hindu University </h5>
+    			<p class="para_text">
+    				Banaras Hindu University has been a central part of Varanasi's identity since its inception in 1916. The well-respected public university is home to more than 25,000 students, making it one of Asia's largest residential universities.
+
+            There are no hill stations near Varanasi, so if you're looking for an escape from the crowds and busy city, come to this lush 1,300-acre campus. 
+    			</p>
+    		</div>
+    		<div class="div2">
+    			<img src="bhu.jpg" class="img2">
+    		</div>
+    		</div>
+
+    		<div id="tact">
+    		<div class="div"> 
+    			<p class="black">Ghat</p>
+    			<h5>Dasaswamedh Ghat </h5>
+    			<p class="para_text">
+    				Banaras Hindu University has been a central part of Varanasi's identity since its inception in 1916. The well-respected public university is home to more than 25,000 students, making it one of Asia's largest residential universities.
+
+            There are no hill stations near Varanasi, so if you're looking for an escape from the crowds and busy city, come to this lush 1,300-acre campus. 
+    			</p>
+    		</div>
+    		<div class="div2">
+    			<img src="dasaswamedh.jpg" class="img2">
+    		</div>
+    		</div>
+
+    		
     	
     </div>
       
