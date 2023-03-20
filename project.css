@@ -142,13 +142,14 @@ h3{
 		 	height: 500px;
 		 	width: 100%;
 		 	color:red;
-		 	margin-top: 50px;
+		 	
+		 	background: #94AF9F;
 		 }
 
 	    #div2 {
           width: 700px;
 		  height: 300px;
-		  background-color: white;
+		  background-color:#94AF9F ;
 		  position: relative;
 		  animation-name: example;
 		  animation-duration: 5s;
@@ -159,11 +160,11 @@ h3{
 		}
 
 		@keyframes example {
-		  0%   {background:url(bhu.jpg)no-repeat center center/cover; left:150px; top:0px;}
-		  25%  {background:url(ganga.jpg)no-repeat center center/cover; left:500px; top:0px;}
-		  50%  {background:url(ghat.jpg)no-repeat center center/cover; left:500px; top:200px;}
-		  75%  {background:url(assi.jpg)no-repeat center center/cover; left:150px; top:200px;}
-		  100% {background:url(picture.jpg)no-repeat center center/cover; left:150px; top:0px;}
+		  0%   {background:url(agra.jpg)no-repeat center center/cover; left:150px; top:0px;}
+		  25%  {background:url(prayagraj.jpg)no-repeat center center/cover; left:500px; top:0px;}
+		  50%  {background:url(vrindavan.jpg)no-repeat center center/cover; left:500px; top:200px;}
+		  75%  {background:url(sarnath.jpg)no-repeat center center/cover; left:150px; top:200px;}
+		  100% {background:url(fatehpur.jpg)no-repeat center center/cover; left:150px; top:0px;}
 		}
         
 
@@ -175,7 +176,7 @@ footer{
 	text-align: center;
 	padding: 60px;
 	height: 400px;
-	margin-top: 30px;
+	
 }
 #logo2{
 	transform:translate(-498px );

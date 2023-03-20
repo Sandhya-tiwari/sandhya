@@ -5,6 +5,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Place to Visit </title>
 	<style>
+    body{
+        background-color: rgba(27, 31, 34, 0.85);
+    }
+    #div{
+    	height: 600px;
+    	width: 100%;
+    	transform: translate(0px,120px);
+
+    }
+    h1{
+	   font-size: 2.1rem;
+	   line-height: 1.4;
+	   letter-spacing: 0.5rem;
+	   text-align: center;
+	   color: white;
+	   margin-top: 50px;
+	   font-family: Copperplate, Papyrus, fantasy;
+
+       }
+
+    .maindiv{
+        height: 500px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-10%);
+        background-image: url(img8.png);
+        background-size: 100% 100%;
+        box-shadow: 1px 2px 5px 5px white;
+        animation: slider 10s infinite linear;
+     }
+    @keyframes slider{
+        0%{background-image: url(img5.jpg);}
+        35%{background-image: url(img6.png);}
+        75%{background-image: url(img7.png);}
+    }
 	#body1{
     	width: 1200px;
     	margin: auto;
@@ -80,6 +116,10 @@
 	</style>
 </head>
 <body>
+	 <h1>Best Places to Visit in Uttar Pradesh</h1>
+	 <div id="div"> 
+	 <div class="maindiv"></div> 
+	</div>
 	<section id="body1">
        	<div id="card">
        		<a href="Varanasi.html"><div id="card2">
