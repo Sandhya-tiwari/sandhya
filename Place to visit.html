@@ -20,11 +20,101 @@
 	   letter-spacing: 0.5rem;
 	   text-align: center;
 	   color: white;
-	   margin-top: 50px;
+	   margin-top: 30px;
 	   font-family: Copperplate, Papyrus, fantasy;
 
        }
+       #div-2{
+       	transform: translate(660px,50px);
+       	width: 500px;
+       	padding: 15px;
+       	background: transparent;
+       	position: absolute;
+       	z-index: 8;
+       }
+       #b-1{
+        font-size: 35px;
+        text-shadow: 5px 5px 5px black;
+       	text-align:center;
+       	margin-left: -100px;
+       }
+       #pre-1{
+       	color: #EBC7E6;
+       	text-shadow: 5px 5px 5px black;
+       	text-align:center;
+       	font-size: 28px;
+       	margin-top:30px ;
+       }
+       #btn1{
+       	color: whitesmoke;
+       	background-color: #245953;
+       	border: transparent;
+       	height: 45px;
+       	width: 100px;
+       	border-radius: 20px;
+       	box-shadow: 0 10px 20px rgba(184,184, 255,0.5);
+       }
+       #btn1:hover{
+       	background-color: #94AF9F;
+       	color: darkmagenta;
+       	box-shadow: 0 5px 10px rgba(184,184, 255,0.4);
+       	transform: translateY(1px);
+       }
+       .slider{
+       	width: 100vw;
+       	height: 500px;
+       	background: none !important;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+        padding: 0;
+        position:relative ;
+       }
+       .image-container{
+       	width: 300vw;
+       	padding: 0;
+       	background-color: lightpink;
+       	height: 100%;
+       	clear: both;
+       	display: flex;
+       	position: relative;
+       	-webkit-transition: left 2s;
+       	-moz -transition: left 2s;
+       	-o-transition: left 2s;
+       	transition:left 2s ;
+       }
+       .slide{
+       	float: left;
+       	margin: 0px;
+       	padding: 0px;
+       	position: relative;
+       	width: 100vw;
+       	height: 100%;
+       }
+       #slide-1:target ~ .image-container{
+       	left: 0px;
+       }
+       #slide-2:target ~ .image-container{
+       	left: -100vw;
+       }
+        #slide-3:target ~ .image-container{
+       	left: -200vw;
+       }
+       .buttons{
+       	position: absolute;
+       	bottom: 0;
+       	width: 100%;
+       	background: rgba(0, 0, 0,0.3);
 
+       }
+       .buttons a{
+       	display: inline-block;
+       	height: 15px;
+       	width: 15px;
+       	border-radius: 50px;
+       	background-color: lightgreen;
+       }
+      
     .maindiv{
         height: 500px;
         width: 100%;
@@ -116,7 +206,39 @@
 	</style>
 </head>
 <body>
+	
+	 <div id="div-2">
+	 	<b id="b-1">Welcome in UP</b>
+	 	<pre id="pre-1">
+            This land is
+           a curious Mix of 
+            the traditional 
+                 and 
+              the modern 
+           offering a plethora
+              of beauty 
+           in every corner
+          "UP once is not enough"  
+	 	</pre>
+	 	<a href="Lucknow.html"><button id="btn1">Visit here</button></a>
+	 </div>
 	 <h1>Best Places to Visit in Uttar Pradesh</h1>
+	 <div class="slider">
+	 	<span id="slide-1"></span>
+	 	<span id="slide-2"></span>
+	 	<span id="slide-3"></span>
+	 	<div class="image-container">
+	 		<img src="bundelkhand.jpg" class="slide" width="500" height="300">
+	 		<img src="taj7.jpg" class="slide" width="500" height="300">
+	 		<img src="img2.jpg" class="slide" width="500" height="300">
+	 	</div>
+	 	<div class="buttons">
+	 		<a href="#slide-1"></a>
+	 		<a href="#slide-2"></a>
+	 		<a href="#slide-3"></a>
+	 		
+	 	</div>
+	 </div>
 	 <div id="div"> 
 	 <div class="maindiv"></div> 
 	</div>
