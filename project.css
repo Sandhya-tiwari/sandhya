@@ -12,13 +12,13 @@
 }
 
 h1{
-	font-size: 40px;
-    margin-left: 350px;
+	font-size: 35px;
 	margin-top: 20px;
     border-radius: 20px;
 	height: 50px;
-	/*width: 400px;*/
+	width: 400px;
 	padding: 20px;
+	transform: translate(400px);
 }
 
 h1:hover{
@@ -27,16 +27,11 @@ h1:hover{
 }
 
 #Azadi{
-	margin-left: 420px;
+	margin-left:800px;
 	height: 150px;
 }
 
-/*li{
-	border: 1px solid grey;
-	background: black;
-	color: white;
 
-}*/
 
 ul{
 	display: flex;
@@ -68,104 +63,41 @@ a{
 
 
 }
-h2{
-	text-align: center;
-	color: white;
-}
-
-h3{
-	text-align: center;
-	color: white;
-}
-
 #search{
 	border: 2px solid black;
 	border-radius: 40px;
 	height: 40px;
 	width: 500px;
+	margin-top: -10px;
+	
 }
-/*.tech-slideshow{
-	margin-top:150px;
-	position: relative;
-	overflow: hidden;
+
+#div1{
 	height: 500px;
 	width: 100%;
-	transform: translate3d(0px, 0px, 0px);
-}
-.tech-slideshow > div{
-	height: 200px;
-	width: 1800px;
-	background: url(images1.jpg);
-	position:absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	transform: translate3d(0px, 0px, 0px);
-}
-.tech-slideshow .mover-1{
-	animation: moveSlideshow 10s linear infinite;
-}
-.tech-slideshow .mover-2{
-	opacity: 0;
-	transition: opacity 0.5s ease-out;
-	background-position: moveSlideshow 15s linear infinite;
+	color:red;
+	background: #94AF9F;
+	}
+#div2 {
+    width: 700px;
+    height: 300px;
+    background-color:#94AF9F ;
+	position: relative;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	}
 
-}
-.tech-slideshow:hover .mover-2
-{ 
-	opacity: 1;
-
-}
- @keyframes moveSlideshow{
- 100%
- {
-	transform:translateX(-50%) ;
- }
- }*/
- /*.container {
-			 width: 1330px;
-             height: 450px;
-             background-color: white;
-             animation-name: animate;
-             animation-duration: 4s;
-             margin-top: 350px;
-
-		}
-		@keyframes animate {
-			 0%   {background:url( bhu.jpg) no-repeat center center/cover;}
-             25%  {background:url(ganga.jpg) no-repeat center center/cover;}
-             50%  {background:url(ghat.jpg) no-repeat center center/cover;}
-             100% {background:url(assi.jpg)no-repeat center center/cover;}
-		}
-		*/
-		#div1{
-		 	height: 500px;
-		 	width: 100%;
-		 	color:red;
-		 	
-		 	background: #94AF9F;
-		 }
-
-	    #div2 {
-          width: 700px;
-		  height: 300px;
-		  background-color:#94AF9F ;
-		  position: relative;
-		  animation-name: example;
-		  animation-duration: 5s;
-		  animation-timing-function: linear;
-		  animation-delay: 2s;
-		  animation-iteration-count: infinite;
-		  animation-direction: alternate;
-		}
-
-		@keyframes example {
-		  0%   {background:url(agra.jpg)no-repeat center center/cover; left:150px; top:0px;}
-		  25%  {background:url(prayagraj.jpg)no-repeat center center/cover; left:500px; top:0px;}
-		  50%  {background:url(vrindavan.jpg)no-repeat center center/cover; left:500px; top:200px;}
-		  75%  {background:url(sarnath.jpg)no-repeat center center/cover; left:150px; top:200px;}
-		  100% {background:url(fatehpur.jpg)no-repeat center center/cover; left:150px; top:0px;}
-		}
+@keyframes example {
+	0%   {background:url(agra.jpg)no-repeat center center/cover; left:150px; top:0px;}
+	25%  {background:url(prayagraj.jpg)no-repeat center center/cover; left:500px; top:0px;}
+	50%  {background:url(vrindavan.jpg)no-repeat center center/cover; left:500px; top:200px;}
+	 75%  {background:url(sarnath.jpg)no-repeat center center/cover; left:150px; top:200px;}
+	100% {background:url(fatehpur.jpg)no-repeat center center/cover; left:150px; top:0px;}
+	}
         
 
 
@@ -187,3 +119,24 @@ footer{
 	font-weight: bold;
 	font-size: 50px;
 }
+.lineup{
+			animation: 3s anim-lineup ease-out infinite;
+
+		}
+		@keyframes anim-lineup{
+			0%{
+				opacity:0;
+				transform: translateY(80%);
+			}
+			20%{
+				opacity: 0;
+			}
+			50%{
+				opacity: 1;
+				transform: translateY(0%);
+			}
+			100%{
+				opacity: 1;
+				transform: translateY(0%);
+			}
+		}
