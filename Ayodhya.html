@@ -11,6 +11,7 @@
 		*{
 			margin: 0;
 			padding: 0;
+
 			box-sizing: border-box;
 			font-family: 'Josefin Sans', sans-serif;
 		}
@@ -129,27 +130,32 @@
             background: #16384c;
 		}*/
 		.container{
-			position:relative;
-			width: 400px;
+			/*border: 2px solid red;*/
+			height: 1200px;
 			display:flex;
+			flex-direction: row;
 			justify-content: center;
-            align-items: center;
+            /*align-items: center;*/
             flex-wrap: wrap;
             padding: 30px;
+
+
 		}
 		.container .card{
-			position:relative;
-			max-width: 300ox;
+			
+			width: 330px;
 			height: 215px;
 			background: #fff;
-			margin: 30px 10px;
+			margin: 20px 10px;
 			padding: 20px 15px;
 			display:flex;
 			flex-direction: column;
-			box-shadow: 0 5px 202px rgba(0, 0, 0,0.5);
+			box-shadow: 0 5px 20px rgba(0, 0, 0,0.5);
 			transition: 0.3s ease-in-out;
+			border-radius: 10px;
+			/*border: 2px solid black;*/
 		}
-		#card:hover{
+		.card:hover{
 			height: 420px;
 		}
 		.container .card .imgbox{
@@ -162,7 +168,9 @@
 			box-shadow: 0 5px 20px rgba(0, 0, 0,0.2);
 		}
 		.container .card .imgbox img{
-			max-width:100%;
+			align-items: center;
+			width:100%;
+			height: 100%;
 			border-radius: 4px;
 
 		}
@@ -182,13 +190,29 @@
 			margin-top: -40px;
 			transition-delay: 0.3s;
 		}
-
+		.heading{
+			text-align: center;
+			padding: 2.5rem 0;
+			margin: auto;
+		}
+		.heading span{
+			font-size: 2.5rem;
+			background: rgba(255, 165, 0,.2);
+			color: #1A3C40;
+			border-radius: .5rem;
+			padding: .2rem 1rem;
+			text-transform: capitalize;
+			font-family: 'Nunito', sans-serif;
+		   
+		}
+		
+		
 	</style>
 </head>
 <body>
    <header>
    	<nav>
-   		<div class="logo"><h1 class="animated infinite hearbeat">MERA BHARAT</h1></div>
+   		<div class="logo"><h1 class="animated infinite heartBeat">Ram Nagari</h1></div>
    		<div class="menu">
    			<a href="Ayodhya.html">Home</a>
    			<a href="Ayodhya.html">Gallery</a>
@@ -206,10 +230,20 @@
         	</section>
         </main>
     </header>
-    <div class="container">
+    	<h4 class="heading">
+    		<span>g</span>
+    		<span>a</span>
+    		<span>l</span>
+    		<span>l</span>
+    		<span>e</span>
+    		<span>r</span>
+    		<span>y</span>
+    	</h4>
+    <div class="container" id="gallery">
+    	
     <div class="card">
     	<div class="imgbox">
-    		<img src="ram-paidi.jpg">
+    		<img src="Ram-ki-Paidi.jpg">
     	</div>
     	<div class="content">
     		<h2>Ram-Ki-Paidi</h2>
@@ -219,7 +253,7 @@
 
     	<div class="card">
     	<div class="imgbox">
-    		<img src="ram-paidi.jpg">
+    		<img src="Saryu-River.jpg">
     	</div>
     	<div class="content">
     		<h2>Saryu River</h2>
@@ -229,7 +263,7 @@
 
     	<div class="card">
     	<div class="imgbox">
-    		<img src="ram-paidi.jpg">
+    		<img src="Kanak-Bhawan.jpg">
     	</div>
     	<div class="content">
     		<h2>Kanak Bhawan</h2>
@@ -238,13 +272,13 @@
 			Marvel at the beautiful idols of Goddess Sita along with Lord Ram and his three brothers. </p>
     	</div>
     	</div>
-     <!--  
+   
     	<div class="card">
     	<div class="imgbox">
-    		<img src="ram-paidi.jpg">
+    		<img src="hanuman-gadi.jpg">
     	</div>
     	<div class="content">
-    		<h2>HanumanGarhi</h2>
+    		<h2>Hanuman Gadhi</h2>
     		<p>The temple has a golden idol of Lord Hanuman; it is counted amongst the most
                 Every day thousands of devotees visit Hanumangarhi to offer prayers and seek Lord Hanuman's protection from evils, and blessing for happiness and prosperity.</p>
     	</div>
@@ -252,7 +286,7 @@
 
     	<div class="card">
     	<div class="imgbox">
-    		<img src="ram-paidi.jpg">
+    		<img src="ramkot.jpg">
     	</div>
     	<div class="content">
     		<h2>Ramkot</h2>
@@ -263,14 +297,46 @@
 
     	<div class="card">
     	<div class="imgbox">
-    		<img src="ram-paidi.jpg">
+    		<img src="Tulsi-Smarak.jpg">
     	</div>
     	<div class="content">
     		<h2>Tulsi Smarak Bhawan</h2>
     		<p>TulsiSmarakBhawan is dedicated to the great saint - poet Goswami Tulsidas Ji. Regular prayer meetings, devotional concerts and religious discourses are held here. The complex also houses Ayodhya Shodh Sansthan which has a large repository of literary compositions on GoswamiTulsidasJi. </p>
     	</div>
     	</div>
-    	 -->
+
+    	<div class="card">
+    	<div class="imgbox">
+    		<img src="Guptar-Ghat.jpg">
+    	</div>
+    	<div class="content">
+    		<h2>Guptar Ghat</h2>
+    		<p>The temple has a golden idol of Lord Hanuman; it is counted amongst the most
+                Every day thousands of devotees visit Hanumangarhi to offer prayers and seek Lord Hanuman's protection from evils, and blessing for happiness and prosperity.</p>
+    	</div>
+    	</div>
+
+    	<div class="card">
+    	<div class="imgbox">
+    		<img src="Gulab-Bari.jpg">
+    	</div>
+    	<div class="content">
+    		<h2>Gulab Bari</h2>
+    		<p>Situated on a high ground and replete with temples and shrines, it is one of the major attractions in Ayodhya.
+            The Ram Navami festival is celebrated here in the month of Chaitra (March - April), as per Hindu calendar, with great pomp and show. It is during this time that pilgrims from all over the country and the world visit in huge numbers and pay obeisance to Lord Ram.. </p>
+    	</div>
+    	</div>
+
+    	<div class="card">
+    	<div class="imgbox">
+    		<img src="Bahu-Begam.jpg">
+    	</div>
+    	<div class="content">
+    		<h2>Tomb of Bahu Begum</h2>
+    		<p>TulsiSmarakBhawan is dedicated to the great saint - poet Goswami Tulsidas Ji. Regular prayer meetings, devotional concerts and religious discourses are held here. The complex also houses Ayodhya Shodh Sansthan which has a large repository of literary compositions on GoswamiTulsidasJi. </p>
+    	</div>
+    	</div>
+    	 
     </div>
 </body>
 </html>
