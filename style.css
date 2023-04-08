@@ -34,7 +34,7 @@ section{
 .heading span{
 	font-size: 3.5rem;
 	background: rgba(255, 165, 0,.2);
-	color: var(--orange);
+	color: #1A3C40;
 	border-radius: .5rem;
 	padding: .2rem 1rem;
 }
@@ -320,10 +320,10 @@ header .search-bar-container label{
 }
 .packages .box-container .box .content h3{
 	font-size: 2rem;
-	color: #333;
+	color:#333;
 }
 .packages .box-container .box .content h3 i{
-	color: var(--orange);
+	color: #B33030;
 }
 .packages .box-container .box .content p{
 	font-size: 1.7rem;
@@ -358,13 +358,13 @@ header .search-bar-container label{
 .services .box-container .box i{
 	padding: 1rem;
 	font-size: 5rem;
-	color: var(--orange);
+	color:#863A6F;
 
 }
 .services .box-container .box h3{
 	
 	font-size: 2.5rem;
-	color:#333;
+	color:#062C30;
 
 }
 .services .box-container .box p{
