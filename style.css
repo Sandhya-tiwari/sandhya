@@ -494,42 +494,6 @@ header .search-bar-container label{
 	color: var(--orange);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width: 1200px){
 	html{
 	font-size:55%;
@@ -577,5 +541,8 @@ header .search-bar-container label{
 	
 }
 }
+
+
+
 
 
