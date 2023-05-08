@@ -4,15 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 	<title>Varanasi</title>
 	<style>
 		
 		*{
 			margin:0;
-		    padding:0;
+		  padding:0;
+		  box-sizing: border-box;
 	    }
 		header{
-			height: 130px;
+			height: 140px;
 			width: 100%;
 			background: skyblue;
 			/*border: 1px solid black;*/
@@ -38,103 +41,281 @@
 			font-size: 50px;
 			font-style: italic;
 			font-weight: bold;
-		}
-		#img{
-			background: url(pic2.jpg) no-repeat center center/cover;
-			height: 450px;
-			width: 100%;
-			/*border: 1px solid black;*/
-		}
-		#para{
-			font-weight: bold;
-			font-style: arial;
-			text-align: center;
-			margin-right: 20px;
-			font-size: 15px;
-			color: white;
-			/*border: 1px solid black;*/
+			color: #D21312;
+			font-family: 'Nova Oval', cursive;
+			font-family: 'Nunito', sans-serif;
 		}
 		#container{
-			height: 700px;
+			height: 600px;
 			width: 100%;
-			background:url(img3.jpg)no-repeat center center/cover;
-			 white-space: nowrap;
-		
+			/*background: grey;*/
+			white-space: nowrap;
+			margin-top: 100px;
 		}
 		#tact{
-			height: 450px;
-			width: 1000px;
-			background: white;
-			display: flex;
-	    margin: auto;
-	    transform: translate(10px,120px);
-	    border: 1px solid black;
-		 
+	   /* border: 1px solid black;*/
+	    border-radius: 10px;
+	    height: 400px;
+	    width: 40%;
+	    background: #EEEEEE;
+	    display: flex;
+	 		transform: translate(150px,50px);
+	 	}
+	  #tact2{
+	  	/*border: 2px solid black;*/
+	  	 border-radius: 10px;
+	  	height: 370px;
+	    width: 42%;
+	    background: white;
+	    display: flex;
+	    transform: translate(650px, -335px);
 	  }
-	    
-		
-		.div{
-      	height: 450px;
-			  width: 500px;
-			  background:#E1EEDD;
-			  clear: both;
-			  position: relative;
-			  -webkit-transition: left 2s;
-			  -moz-transition: left 2s;
-			  -o-transition: left 2s;
-			  transition: left 2s;
-		}
-		.div2{
-      	height: 450px;
-			  width: 500px;
-		}
+	  #img2{
+	  	height: 100%;
+	  	width: 100%;
+	  	cursor: pointer;
+	  	border-radius: 10px;
+	  }
+	  h4{
+	  	font-size:2rem;
+	  	color:darkred ;
+	  	font-weight: bold;
+	  }
+	
+		h5{
+			margin-top: 20px;
+			margin-left:200px;
+			/*border: 2px solid green;*/
+			height: 40px;
+			font-size: 35px;
+			color: orangered;
+			}
+			h5:hover{
+				color: darkmagenta;
+			}
+			h6{
+				font-size: 3rem;
+				font-weight: bold;
+				color: #088395;
+				text-align: center;
+				margin-top: -80px;
+				font-family: 'Nunito', sans-serif;
+			}
 
-		
-		h4{
-			font-size: 40px;
-			font-weight: bold;
-			font-style: oblique;
-			margin-left: 200px;
-			height: 50px;
-			color: white;
-			transform: translate(10px,80px);
+		.para_text{
+			text-align: center;
+    	margin-right: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      font-style: italic;
+      color:#B0A4A4;
+      /*margin-top: 10px;*/
+			font-family: 'Space Mono', monospace;
 		}
-		.img2{
-			height: 450px;
-			width: 500px;
-			float: left;
-			margin: 0px;
-			padding: 0px;
-			position: relative;
-		
+		#img{
+			background:url(varanasi5.jpeg)no-repeat center center/cover;
+			height: 800px;
+			width: 100%;
+		}
+	
+		#p_text{
+			height: 100px;
+			width: 50%;
+			font-weight: bold;
+			font-size: 18px;
+			text-align: center;
+			color: #89375F;
+			transform: translate(-350px,100px);
+			font-family: 'Trade Winds', cursive;
+	
+		}
+		#p_text:hover{
+			color: #245953;
 		}
 		.black{
+			height: 650px;
+			width: 100%;
+			margin-top: 20px;
+			/*border:2px solid red ;*/
+		}
+		.img{
+			background: url(Varanas3i.jpg) no-repeat center center/cover;
+			height: 100%;
+			width: 100%;
+		}
+		#heading{
+			text-align: center;
+			transform: translate(0, 20px);
+			font-size: 2.5rem;
+			font-family: Copperplate, Papyrus, fantasy;
+			color: white;
+		}
+		#div{
+			/*border: 1px solid white;*/
+			height:480px;
+			width: 500px;
+			display: flex;
+			margin-top: 5px;
+			border-top:dashed ;
+			margin-left: 80px;
+		}
+		#div2{
+			/*border: 1px solid yellow;*/
+			height:480px;
+			width: 700px;
+			display: flex;
+			margin-left: 600px;
+			transform: translate(10px,-540px);
+		}
+		#heading2{
+			margin-left:-880px ;
+			font-size: 2.5rem;
+			font-family: Copperplate, Papyrus, fantasy;
+			color: white;
 			margin-top: 30px;
-			font-size: 20px;
-			font-weight: bold;
-			margin-left: 50px;
-		}
-		h5{
-			margin-top: 10px;
-			font-size: 35px;
-			font-weight: bold;
-			margin-left: 50px;
-			color: orangered;
 			
-			}
-		h5:hover{
-			color: darkmagenta;
 		}
-		.para_text{
-       margin-left: 50px;
-       font-weight: bold;
-       font-size: 20px;
-       font-style: italic;
-       color: darkred;
-       margin-top: 20px;
+		#p-text{
+			text-align: center;
+			color: white;
+			font-size: 1.2rem;
+			margin-top: 10px;
 		}
-		
+		#video{
+			height: 100%;
+			width: 100%;
+			transform: translate(0,-30px);
+		}
+		@import url('https://fonts.googleapis.com/css?family=Raleway');
+		body {
+		  font-family: 'Raleway';
+		  margin: 0;
+		}
+		.title {
+		  background: rgba(255, 255, 255, 0.7);
+		  color: #333;
+		  position: fixed;
+		  text-align: right;
+		  top: 0;
+		  right: 0;
+		  padding: 10px 15px;
+		  margin: 0;
+		  z-index: 100;
+		}
+		.slider {
+		  position: relative;
+		  overflow: hidden;
+		  height: 100vh;
+		  width: 100vw;
+		}
+		.slide {
+		  background-position: center center;
+		  background-size: cover;
+		  position: absolute;
+		  top: 0;
+		  left: 100%;
+		  height: 100%;
+		  width: 100%;
+		}
+		.slide.active {
+		  transform: translateX(-100%);
+		}
+		.slide .info {
+		  background-color: rgba(255, 255, 255, 0.7);
+		  color: #333;
+		  padding: 20px 15px;
+		  position: absolute;
+		  opacity: 0.1;
+		  top: 80px;
+		  left: 40px;
+		  text-align: center;
+		  width: 300px;
+		  max-width: 100%;
+		}
+		.slide.active .info{
+		  opacity: 1;
+		  transform: translateY(-40px);
+		  transition: all 0.5s ease-in-out 0.8s;
+		}
+		.slide .info h1 {
+		  margin: 10px 0;
+		}
+		.slide .info p {
+		  letter-spacing: 1px;
+		}
+		.eraser {
+		  background: #f5f5f5;
+		  position: absolute;
+		  transition: transform 0.5s ease-in-out;
+		  opacity: 0.95;
+		  top: 0;
+		  left: 100%;
+		  height: 100%;
+		  width: 100%;
+		  z-index: 100;
+		}
+		.eraser.active {
+		  transform: translateX(-100%);
+		}
+		.buttons-container {
+		  position: absolute;
+		  bottom: 50px;
+		  right: 60px;
+		}
+		.buttons-container button {
+		  border: 2px solid #fff;
+		  background-color: transparent;
+		  color: #fff;
+		  cursor: pointer;
+		  padding: 8px 30px;
+		  margin-right: 10px;
+		}
+		.buttons-container button:hover {
+		  background-color: #fff;
+		  color: #A9A9A9;
+		  opacity: 0.9;
+		}
+		@media (max-width: 400px) {
+		  .slide .info {
+		    top: 100px;
+		    left: 10px;
+		  }
+		}
+
+		@import url(https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900);
+
+		body{
+			background: #fff;
+			font-size: 14px;
+			color: #000;
+			margin: 0;
+			padding: 0;
+			min-height: 100vh;
+			background: #111;
+			font-family: Helvetica Neue,Helvetica, Arial,sans-serif;
+		}
+		.swiper-container{
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 200px;
+
+		}
+		.swiper-slide{
+			background-position: center;
+			background-size: cover;
+			width: 300px;
+			height: 300px;
+			background: #000;
+			-webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+		}
+		.images{
+			height: 400px;
+			width: 300px;
+		}
+
+
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Yesteryear&display=swap" rel="stylesheet">
 </head>
 <body>
 	  <header>
@@ -143,108 +324,177 @@
 	  	<h3>The City of Ghats</h3>
 	  </header>
 	  <h2>Best Places to Visit in Varanasi</h2>
-	  <div id="img">
-
-	 <pre> <p id="para">
-	  	
-	Want to experience the spirituality of India at its most vibrant? Head to Varanasi in Uttar 
-	Pradesh. This ancient city, inhabited continuously for some 2,800 years (and counting), is 
-     one of the holiest places for Hindus. Devotees believe Varanasi is where they can break free 
-	from the cycle of rebirth and unite with the divine upon death. The conviction manifests in a
-	  	profound intensity that pulses throughout the frenetic city.
-
-     The center of action in Varanasi can be found at the Banaras ghats – a series of giant steps 
-       leading to the Ganges River. In the morning, the devout descend the stairs to wash away
-        their sins in the holy water, and at night, they return for fire-fueled prayer ceremonies.
-
-      The energy continues throughout the day in the labyrinthine old city. Legend has it that no
-       accurate map has ever been drawn of Varanasi's complex web of twisting alleys. Expect to   
-        get lost and experience some of the best sightseeing of your life.
-
-        Want to make the most of your time in "The City of Light"? Check out our list of the best     
-          places to visit in Varanasi
-	  </p></pre>
-	  </div>
-    <div id="container">
-    	<h4>Golden Triangle Tour with Varanasi</h4>
-    	<div id="tact">
-    		<div class="div"> 
-    			<p class="black">River</p>
-    			<h5>Ganga River</h5>
-    			<p class="para_text">
-    				Named after the Hindu goddess Ganga, the Ganges<br> River is one of the most revered
-    				natural sites in India.Ghats in Varanasi are riverfront steps leading <br>to the banks of the River Ganges. The city has 88 ghats. Morning boat ride on the Ganges across the ghats is a popular visitors attraction.
-    			</p>
-    			<i class= "fa fa-chevron-left" style="margin-top: 100px; font-size:35px; width: 80px; margin-left: 50px;"></i>
-    			<i class="fa fa-chevron-right"style="margin-top: 100px; font-size:35px; width: 80px;"></i>
-    			
-    		</div>
-    		<div class="div2">
-    			<img src="ganga.jpg" class="img2">
-    		</div>
-    	</div>
-
-
-    	<div id="tact">
-    		<div class="div"> 
-    			<p class="black">Ghat</p>
-    			<h5>Assi Ghat </h5>
-    			<p class="para_text">
-    				Assi Ghat's star attraction is a Shiva lingam (phallic representation of the Hindu deity) beneath a sacred fig tree.Tourists can also see another Ganga Aarti performance here in the evening, which is slightly smaller and more intimate than the one at Dasaswamedh Ghat.
-    			</p>
-    		</div>
-    		<div class="div2">
-    			<img src="assi.jpg" class="img2">
-    		</div>
-    		</div>
-
-    		<div id="tact">
-    		<div class="div"> 
-    			<p class="black">Ghat</p>
-    			<h5>Dasaswamedh Ghat </h5>
-    			<p class="para_text">
-    				Hindu priests put on the Ganga Aarti every night at the Dasaswamedh Ghat, starting at around 7pm. This tourist attraction is a swirling hodgepodge of flower sellers touting bright blossoms, boat operators hawking rides along the Ganges River, and sadhus (holy men) with face paint. 
-    			</p>
-    		</div>
-    		<div class="div2">
-    			<img src="dasaswamedh.jpg" class="img2">
-    		</div>
-    		</div>
-
-
-    		<div id="tact">
-    		<div class="div"> 
-    			<p class="black">Temple</p>
-    			<h5>Kashi Vishwanath Temple </h5>
-    			<p class="para_text">
-    					Hindu pilgrims and tourists alike travel for thousands of miles to reach the Shri Kashi Vishwanath Temple, a sacred attraction around four kilometers from the Varanasi Junction railway station near the Manikarnika Ghat. The impressive structure, dedicated to the Hindu deity Shiva, has earned the nickname "The Golden Temple" for its striking spire – plated in some 800 kilograms of pure gold. 
-    			</p>
-    		</div>
-    		<div class="div2">
-    			<img src="vishwanath.jpg" class="img2">
-    		</div>
-    		</div>
-
-
-    		<div id="tact">
-    		<div class="div"> 
-    			<p class="black">University</p>
-    			<h5>Banaras Hindu University </h5>
-    			<p class="para_text">
-    				Banaras Hindu University has been a central part of Varanasi's identity since its inception in 1916. The well-respected public university is home to more than 25,000 students, making it one of Asia's largest residential universities.
-
-            There are no hill stations near Varanasi, so if you're looking for an escape from the crowds and busy city, come to this lush 1,300-acre campus. 
-    			</p>
-    		</div>
-    		<div class="div2">
-    			<img src="bhu.jpg" class="img2">
-    		</div>
-    		</div>
-    		</div>
-
-    		
-    	
+	  <div class="slider">
+  <div class="slider-container">
+    <div class="slide active" style="background-image: url('assi.jpg');">
+      <div class="info">
+        <h4>Assi Ghat</h4>
+        <p>The Asi Ghat is placed at the confluence of the Rivers Assi and Ganga and is famous for the large Shiva Lingam installed under a peepal tree.</p>
+      </div>
     </div>
-      
+    <div class="slide" style="background-image: url('ganga1.jpg');">
+      <div class="info">
+        <h4>Ganga Aarati</h4>
+        <p>Ganga Aarti is an important ritual held on a grand scale every morning and evening on the banks of the holy Ganges.</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('vishwanath.jpg');">
+      <div class="info">
+        <h4>Kashi Vishwanath Temple</h4>
+        <p>The New Vishwanath Temple is every pious man's go-to destination to feel overwhelmed by the presence and power of the great Lord Shiva.</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('bhu.jpg');">
+      <div class="info">
+        <h4>Banaras Hindu University</h4>
+        <p>Established by Madan Mohan Malviya in 1916, Banaras Hindu University is a 5.3 square kilometre campus in the city. It has about 30,000 students residing in the campus and is the largest residential university in the continent. </p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('ramnagar.jpg');">
+      <div class="info">
+        <h4>Ramnagar Fort</h4>
+        <p>It was built by Raja Balwant Singh in 1750 according to the Mughal style of architecture.Located on the Eastern banks of River Ganga, opposite to Tulsi Ghat, Ramnagar Fort is a stunning historical monument in Varanasi </p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('paan2.jpg');">
+      <div class="info">
+        <h4>Banarasi Paan</h4>
+        <p>Paan has a long association with India and its socio-cultural dimension.the most popular variety of Paan in India is the one and only Banarasi Meetha Paan.</p>
+      </div>
+    </div>
+  </div>
+  <div class="eraser"></div>
+  <div class="buttons-container">
+    <button id="previous"><i class="fas fa-chevron-left"></i></i></button>
+    <button id="next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</div>
+
+ <div id="container">
+	 <h6>Attractions</h6>
+	  <p class="para_text">
+	  	The legacy of Varanasi through its historic attractions
+	  </p>
+	  	<div id="tact">
+	  		<h5>Ganga Ghats</h5> 
+	  		<p id="p_text"> 
+A visit to Varanasi cannot be complete without a <br> visit to the ghats running along River Ganges.<br>The ghats
+have been a source of inspiration for<br> artists, film-makers, photographers, writers and<br>  musicians for centuries. There are about 88 <br>ghats in the...
+	  		</p>
+	  	</div>
+	  	 <div id="tact2">
+	  		<img src="ganga-aarti.jpeg" id="img2">
+	  	</div>  
+	  </div>
+
+	 		<div class="swiper-container">
+	 			<div class="swiper-wrapper">
+	 				<div class="swiper-slide"><img src="durga-temple.jpg"class="images"></div>
+	 				<div class="swiper-slide"><img src="manikarnika.jpg" class="images"></div>
+	 				<div class="swiper-slide"><img src="dashashwamedh ghat.jpg" class="images"></div>
+	 				<div class="swiper-slide"><img src="shivala ghat.jpg" class="images"></div>
+	 				<div class="swiper-slide"><img src="sarnath.jpg" class="images"></div>
+	 				<div class="swiper-slide"><img src="namo.jpg" class="images"></div>
+	 				<div class="swiper-slide"><img src="Alamgir-mosque.jpg" class="images"></div>
+	 				<div class="swiper-slide"><img src="fun city.png" class="images"></div>
+	 			</div>
+	 		</div>
+	   <section class="black">
+    	<div class="img">
+    		<h2 id="heading">Explore Varanasi Sarnath through Lens</h2>
+    		<h2 id="heading2">Bemisal Benaras</h2>
+    		<div id="div">
+					<p id="p-text">
+					Experience the Historical Ghats, Holy Ganges, Mysterious Streets, Delicious Treats, Traditional Arena, Famous Paan, Serene Sarnath and Spiritual Evening Aarti by experiencing unprecedented Benaras…<br><br>
+
+					Come To Uttar Pradesh</p>
+    		</div>
+    		<div id="div2">
+    			<video src="vdo2.mp4" id="video" controls loop autoplay muted></video>
+    		</div> 
+    	</div>
+    </section>
+    <script>
+    	const slides = document.querySelectorAll('.slider-container .slide');
+			const eraser = document.querySelector('.eraser'); 
+			const prev = document.getElementById('previous'); 
+			const next = document.getElementById('next'); 
+			const intervalTime = 6000; 
+			const eraserActiveTime = 500; 
+			let sliderInterval;
+
+
+			const nextSlide = () => {
+		  eraser.classList.add('active');
+		  setTimeout(() => {
+		    const active = document.querySelector('.slide.active');
+		    active.classList.toggle('active');
+		    if(active.nextElementSibling) {
+		      active.nextElementSibling.classList.toggle('active');
+		    } else {
+		      slides[0].classList.toggle('active');
+		    }
+		    setTimeout(() => {
+		      eraser.classList.remove('active');
+		    }, 180);
+		  }, eraserActiveTime);
+		}
+		const prevSlide = () => {
+		  eraser.classList.add('active');
+		  setTimeout(() => {
+		    const active = document.querySelector('.slide.active');
+		    active.classList.toggle('active');
+		    if(active.previousElementSibling) {
+		      active.previousElementSibling.classList.toggle('active');
+		    } else {
+		      slides[slides.length-1].classList.toggle('active');
+		    }
+		    setTimeout(() => {
+		      eraser.classList.remove('active');
+		    }, 180);
+		  }, eraserActiveTime);
+		}
+
+		next.addEventListener('click', () => {
+		  nextSlide();
+		  clearInterval(sliderInterval);
+		  sliderInterval = setInterval(nextSlide, intervalTime);
+		});
+
+		prev.addEventListener('click', () => {
+		  prevSlide();
+		  clearInterval(sliderInterval);
+		  sliderInterval = setInterval(nextSlide, intervalTime);
+		});
+
+		sliderInterval = setInterval(nextSlide, intervalTime);
+
+	
+		setTimeout(nextSlide, 500);
+		
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    	var swiper = new Swiper('.swiper-container',{
+	    		effect:'coverflow',
+	    		grabCursor:true,
+	    		centeredSlides:true,
+	    		slidesPerView:'auto',
+	    		coverflowEffect: {
+	    		rotate:20,
+	    		stretch:0,
+	    		depth:200,
+	    		modifier:1,
+	    		slideShadows:true,
+	    		},
+
+	    		loop:true,
+	    		autoplay:{
+	    		delay:500,
+	    		disableOnInteraction:false,
+	    		},
+
+	    	});
+    </script>
 </body>
 </html>
