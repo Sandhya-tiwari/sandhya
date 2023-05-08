@@ -4,9 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
 	<title>Lucknow</title>
-<style>
+	<style>
 		#navbar{
 			background-color:#BC8F8F;
 			height: 150px;
@@ -23,16 +22,12 @@
             font-family:Copperplate Gothic Light;
 
 	    }
-		#img{
-			background: url(lucknow.jpg) no-repeat center center/cover;
-			height: 500px;
-			text-align: center;
-		}
+		
 		h2{
 			font-style: italic;
 			font-size: xx-large;
-			margin-top: 25px;
-			color:#800000;
+			margin-top: 15px;
+			color:#820000;
 
 		}
 		h3{
@@ -53,21 +48,18 @@
 			width: 250px;
 			border: 1px solid grey;
 		}
-		/*#img2{
-		    margin-left: 300px;
-	        height: 150px;
-		}*/
 		footer {
 			background: #2F4F4F;
-			height: 600px;
+			height: 530px;
 			width: 100%;
 			padding: 60px;
+			margin-top: 20px;
 		}
 		#tact1{
 			text-align: center;
 			background: white;
-			width: 100%;
-			height: 500px;
+			width: 85%;
+			height: 400px;
 			margin: auto;
 		}
 		h4{
@@ -85,14 +77,131 @@
         }
         h6{
         	font-style: constantia;
-        	font-weight:bold italic ;
+        	font-weight:bolder italic ;
+      
+
+
         }
+        .banner{
+        	width: 100%;
+        	height: 100vh;
+        	position: relative;
+        	overflow: hidden;
+        }
+        #slider{
+        	width: 100%;
+        	height: 100vh;
+        	position: absolute;
+        	top: 0;
+        }
+        
+        #slideImg{
+        	width: 100%;
+        	height: 100%;
+        	animation: zoom 3s linear infinite;
+        }
+        @keyframes zoom{
+        	0%{
+        		transform: scale(1.3);
+        	}
+        	15%{
+        		transform: scale(1);
+        	}
+        	85%{
+        		transform: scale(1);
+        	}
+        	100%{
+        		transform: scale(1.3);
+        	}
+        }
+        .overlay{
+        	height: 100vh;
+        	width: 100%;
+        	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+        	position:absolute;
+        	top: 0;
+        }
+        
+        .content{
+        	width: 60%;
+        	margin: 160px auto 0;
+        	text-align: center;
+        	color: #fff;
+        }
+        .content h2{
+        	font-size:50px;
+			font-family: 'Space Mono', monospace;
+				
+		}
+         .content h6{
+         	font-size: 30px;
+         	width: 80%;
+         	margin: 20px auto 100px;
+         	font-weight: 100;
+         	line-height: 25px;
+         }
+         .black{
+			height: 650px;
+			width: 100%;
+			/*border:2px solid red ;*/
+		}
+		.img{
+			background: url(VS1.jpg) no-repeat center center/cover;
+			height: 100%;
+			width: 100%;
+		}
+		#heading{
+			text-align: center;
+			transform: translate(0, 20px);
+			font-size: 2.5rem;
+			font-family: Copperplate, Papyrus, fantasy;
+			color: #89375F;
+			font-weight: bold;
+		}
+		#div{
+			/*border: 1px solid white;*/
+			height:480px;
+			width: 500px;
+			display: flex;
+			margin-top: 5px;
+			border-top:dashed ;
+			margin-left: 80px;
+		}
+		#div2{
+			/*border: 1px solid yellow;*/
+			height:480px;
+			width: 700px;
+			display: flex;
+			margin-left: 600px;
+			transform: translate(10px,-500px);
+		}
+		#heading2{
+			margin-left:80px ;
+			font-size: 2.5rem;
+			font-family: Copperplate, Papyrus, fantasy;
+			color:  #0A4D68;
+			margin-top: 30px;
+			font-weight: 800;
+			
+		}
+		#p-text{
+			text-align: center;
+			color: #9E4784;
+			font-weight: bold;
+			font-size: 1rem;
+			margin-top: 10px;
+		}
+		#video{
+			height: 80%;
+			width: 100%;
+			transform: translate(0,-30px);
+		}
+		
 
-
-
-	</style>
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Yesteryear&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body onload="slider()">
 	<nav id="navbar"><div>
 			<img src="lko logo.jpg" id="logo">
 		</div>
@@ -100,9 +209,19 @@
 		<h3>The Captial of Uttar Pradesh</h3>
 		<img src="lko.jpg" id="img2">
 	</nav>
-	 <div id="img">
-		<h2>The City of Nawabs</h2>
-	</div>
+	 
+		<div class="banner">
+			<div class="slider">
+			<img src="lucknow.jpg" id="slideImg">
+		</div>
+
+		<div class="overlay">
+			<div class="content">
+				<h2>Let's start to visiting </h2>
+				<h6>The city of Nawabs,kabab and Adab</h6>
+			</div>
+		</div>
+		</div>
 	
 	<div class="w3-container w3-main w3-padding w3-center w3-border" style="margin-top: 50px;">
 	<div>
@@ -131,9 +250,37 @@
 				<img src="Rumi Darwaja.jpg" style="width:350px;" class="w3-hover-sepia">
 				<p>Rumi Darwaja</p>
 			</div>
+			<div class="w3-col s4" id="ho">
+				<img src="Clock-Tower.jpg" style="width:350px;" class="w3-hover-sepia">
+				<p>Clock Tower</p>
+			</div>
+			<div class="w3-col s4" id="ho">
+				<img src="Satkhanda.jpg" style="width:350px;" class="w3-hover-sepia">
+				<p>Satkhanda</p>
+			</div>
+			<div class="w3-col s4" id="ho">
+				<img src="lulu_mall.jpg" style="width:350px;  height: 232px;" class="w3-hover-sepia">
+				<p>Lulu Mall</p>
+			</div>
 		</div>
 	  </div>
      </div>
+
+      <section class="black">
+    	<div class="img">
+    		<h2 id="heading">Explore Lucknow through Lens</h2>
+    		<h2 id="heading2"> Lavish Lucknow</h2>
+    		<div id="div">
+			<p id="p-text">Discover Bara Imambara, Vidhan Sabha, La Martiniere, Rumi 
+				Darwaza, Chhota Imambara, Residency, Chikankari, Nawabi
+				Delicacies and Hospitality of Nawabs by discovering the lavish 
+				Lucknow.....</p>
+    		</div>
+    		<div id="div2">
+    		<video src="videoplayback.mp4" id="video"  controls loop autoplay muted></video>
+    		</div>
+    	</div>
+    </section>
  <footer >
   <address>
     <div>
@@ -150,11 +297,33 @@
           </button>
         	
      	</div>
-</div>
+	</div>
         
      	</div>
-     		
      	</address>
      </footer>
+     <script>
+     		
+     	var slideImg = document.getElementById("slideImg");
+     	
+     	var images = new Array(
+     		"lucknow1.jpg",
+     		"Rumi Darwaja.jpg",
+     		"Aminabad-Market.jpg",
+			"Gomti-Riverfront-Park.jpg"
+			);
+     	var len = images.length;
+     	var i = 0;
+
+     	function slider() {
+     		if(i > len-1){
+     			i = 0;
+     		}
+     		slideImg.src =  images[i];
+     		i++;
+     		setTimeout('slider()',3000);
+     	}
+
+     </script>
  </body>
 </html>
