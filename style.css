@@ -541,7 +541,20 @@ header .search-bar-container label{
 	html{
 	font-size:50%;
 	
-}
+	}
+	/*a.logo{
+		color: red;
+	}*/
+
+
+	header {
+		max-width: 100vw;
+	}
+
+	.swiper-container
+	{
+		overflow: hidden;
+	}
 }
 
 
